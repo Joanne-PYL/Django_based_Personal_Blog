@@ -1,0 +1,36 @@
+{% extends 'blog/base.html' %}
+{% load mathfilters %}
+
+
+{% block content %}
+<h1>Posts</h1>
+<div class="list-group">
+    {% for post in post_list %}
+        <div class="POST">
+        <a href="{% url 'post_detail' pk=post.pk %}" class="list-group-item list-group-item-action" aria-current="true">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="mb-1 p-2 flex-grow-1">{{ post.title }}</h1>
+                <small class="badge bg-primary rounded-pill" href="{% url 'post_detail' pk=post.pk %}">{{ post.approve_comments.count }}</small>
+                    {% if user.is_authenticated %}
+                        <small class="badge bg-danger rounded-pill" href="{% url 'post_detail' pk=post.pk %}">{{ post.comments.count|sub:post.approve_comments.count }}</small>
+                    {% endif %}
+            </div>
+            <p class="mb-1 ms-2">Published on: {{ post.published_date|date:"d M Y" }}</p>
+        </a>
+        </div>
+
+    {% empty %}
+    <div class="p-3 mb-3 bg-light rounded">
+        <p>Add some new Posts!</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+

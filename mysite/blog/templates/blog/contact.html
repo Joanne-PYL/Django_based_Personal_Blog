@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+{% load bootstrap5 %}
+ 
+ {% block content %}
+<h1>Leave some messages!</h1>
+ <form method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+         
+    <input type="submit" class="btn btn-outline-success" value="Submit" 
+    onclick="return confirm('Your message was successfully submitted!')">
+
+</form>    
+<script>var editor = new MediumEditor('.editable');</script>
+ 
+{% endblock %}
+ 

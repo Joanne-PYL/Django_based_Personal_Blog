@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+
+{% block content %}
+<h1>New Comment</h1>
+<form class="post-form" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+        
+    <input type="submit" class="btn btn-outline-success btn-comment" value="Post Comment" 
+    onclick="return confirm('Thank you for the comment! Your comment is under review!')">
+
+</form>    
+<script>var editor = new MediumEditor('.editable');</script>
+
+{% endblock %}

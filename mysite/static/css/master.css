@@ -1,0 +1,357 @@
+.jumbotron {
+	padding: 2rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+  }
+.list-group {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+}
+
+.textoverflow{
+	word-break: break-all;
+ }
+/* .myphoto{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%; 
+} */
+
+
+
+
+*, *:after, *:before {	box-sizing: border-box; border:none; padding: 0; margin: 0; outline: 0;}
+
+body {
+	background: #A4D4C0;
+}
+/* .wrapper {
+	width: 85%;
+	height: 600px;
+	margin: 50px auto;
+	position: relative;
+	overflow: hidden;
+} */
+                                           
+			/*********light-wrapper************/
+.wrapper-office {
+	width: 100%;
+	height: 350px;
+	position: relative;
+	top: 38%; 
+}
+			/*********laptop************/
+
+.laptop {
+	width: 250px;
+	height: 145px;
+	background: #b5d5e5;
+	/* background: #EDF8F4; */
+	position: absolute;
+	top: 60%; left: 50%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border: #EDF8F4 solid 10px;
+}
+
+.laptop:before {
+	content: '';
+	position: absolute;
+	top: 95%;
+	left: -11%;
+	width: 280px;
+	height: 18px;
+	background: #c2c1c1;
+	border-radius: 10px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.icon-people{
+	position: absolute;
+	color: #6085eb;
+	font-size: 60px;
+	/* padding: 40%; */
+	/* width:50%; */
+	top: 15%; left: 37%;
+
+}
+.icon-people-logged{
+	position: absolute;
+	color: #6085eb;
+	/* font-size: 10px; */
+	/* padding: 40%; */
+	/* width:50%; */
+	top: 5%; left: 20%;
+
+}
+
+			/*********offfice back****************/
+.office-table {
+	width: 80%;
+	height: 10px;
+	border-radius: 30px;
+	background: #6E535C;
+	position: absolute;
+	top: 102%; left: 10%;
+}
+
+			/*********screen************/
+.bk-screen {
+	position: absolute;
+	width: 180px;
+	height: 241px;
+	background: #d3d3f7;
+	/* background: #343441; */
+	border: 8px solid #525151;
+	top: 22%; 
+  	left: 65%;
+	/* z-index: -1; */
+
+	/* background:url(https://raw.githubusercontent.com/freemh/web-developper-workspace-full-css/master/images/codes.jpg);
+	background-size: 100%; */
+  /* -webkit-animation: slide 15s linear infinite;
+	-moz-animation:    slide 15s linear infinite;
+	-o-animation:      slide 15s linear infinite;
+	animation:         slide 15s linear infinite; */
+}
+
+.bk-screen:before {
+	content: '';
+	position: absolute;
+	background: #343434;
+	width: 78px;
+	height: 17px;
+	bottom: -25px;
+	left:46px;
+}
+
+.bk-screen:after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 0;
+	bottom: -38px;
+	right: 64px;
+	border-bottom: 14px solid #626262;
+}
+
+i {
+	position: absolute;
+	background: #343434;
+	width: 103px;
+	height: 9px;
+	bottom: -47px;
+	left: 35px;
+}
+
+.backward  {
+	position: absolute;
+	background: white;
+	border-radius: 5px;
+	left: 13%;
+	width: 120px;
+}
+.position1  {
+	position: absolute;
+	height: 5px;
+	top: 10%;
+}
+.position2  {
+	position: absolute;
+	height: 5px;
+	top:15%;
+}
+.position3  {
+	position: absolute;
+	height: 5px;
+	top:20%;
+	background-color: #b89adb;
+
+}
+.position4  {
+	position: absolute;
+	height: 5px;
+	top:25%;
+	background-color: #b89adb;
+
+}
+.position5  {
+	position: absolute;
+	height: 50px;
+	top:30%;
+	/* background-color: #b89adb; */
+}
+.position6  {
+	position: absolute;
+	width: 120px;
+	height: 70px;
+	top:60%;
+	left:13%;
+	background: transparent;
+	border: white solid 2px;
+	border-radius: 5px;
+}
+/* =============================================== /*
+/*                     Home                      /*
+/* =============================================== */
+.house{
+	position: absolute;
+	bottom: 64%; 
+  	left: 35%;
+	transform: scale(0.5);
+}
+.roof {
+	position: absolute;
+	z-index: 9;
+	left: 52px;
+	top: 55px;
+	width: 0; 
+	height: 0; 
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-bottom: 70px solid #ff9999;
+	/* border-bottom: 70px solid #df615c; */
+  }
+
+.mill {
+	position: absolute;
+	left: 52px;
+	top: 124px;
+	width: 140px;
+	height: 100px;
+	background-color: #fff;
+}
+.mill:after {
+	  position: absolute;
+	  content: "";
+	  background-color: #41155a;
+	  height: 50px;
+	  width: 40px;
+	  bottom: 0;
+	  left: 28px;
+	  border-radius: 40% 40% 0 0;
+	  border-left: 5px solid #edadac;
+	}
+.mill:before {
+	position: absolute;
+	content: "";
+	background-color: #41155a;
+	height: 40px;
+	width: 30px;
+	top: 20px;
+	left: 80px;
+	border-radius: 18px;
+	border-left: 5px solid #edadac;
+}
+  
+
+/* =============================================== /*
+/*                     iPhone                      /*
+/* =============================================== */
+.iphone {
+	position: absolute;
+	/* top: -64px; */
+	right: 30px;
+	width: 40px;
+	height: 70px;
+	background: #ededed;
+	border: black solid 5px;
+	border-radius: 3px;
+	top: 82%; left: 74%;
+}
+.bu{
+	position:absolute;
+	color: green;
+	top: 30%; left: 25%;
+	font-size:large;
+}
+
+
+.books {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	top: 70.5%; 
+  	left: 20%;
+	text-indent: 20px;
+}
+
+.book-one {
+	position: absolute;
+	width: 161px;
+	height: 60px;
+	background: #69a38b;
+	border-radius: 5px;
+	top: 0%; left: 0%;
+	line-height: 50px;
+	transform: rotate(90deg); /* Equal to rotateZ(45deg) */
+
+}
+
+.book-two {
+	position: absolute;
+	width: 180px;
+	height: 30px;
+	background: #D36061;
+	border-radius: 5px;
+	top: 2%; left: 12%;
+	transform: rotate(90deg); /* Equal to rotateZ(45deg) */
+}
+
+.book-three {
+	width: 180px;
+	height: 30px;
+	background: #FAC155;
+	border-radius: 5px;
+	position: absolute;
+	top: 1.7%; left: 27%;
+	transform: rotate(80deg); /* Equal to rotateZ(45deg) */
+}
+
+.book-four {
+	width: 150px;
+	height: 40px;
+	background: #47aae4;
+	border-radius: 5px;
+	position: absolute;
+	top: 4.5%; left: 44.5%;
+	line-height: 35px;
+	transform: rotate(80deg); /* Equal to rotateZ(45deg) */
+}
+
+.book-five {
+	width: 160px;
+	height: 40px;
+	background: rgb(245, 180, 101);
+	border-radius: 5px;
+	position: absolute;
+	top: 23.5%; left: 80%;
+	line-height: 40px;
+	/* transform: rotate(45deg); Equal to rotateZ(45deg) */
+}
+
+.book-six {
+	width: 160px;
+	height: 41px;
+	background: #e3749b;
+	border-radius: 5px;
+	position: absolute;
+	top: 10%; left: 85%;
+	line-height: 40px;
+	/* transform: rotate(90deg); Equal to rotateZ(45deg) */
+}
+
+
+.book-seven {
+	width: 140px;
+	height: 40px;
+	background: wheat;
+	border-radius: 5px;
+	position: absolute;
+	top: -3%; left: 76%;
+	line-height: 40px;
+	/* transform: rotate(90deg); Equal to rotateZ(45deg) */
+}
