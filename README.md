@@ -1,5 +1,5 @@
 # Django_based_Personal_Blog
-The personal blog website uses Bootstrap and Django as framework.
+The personal blog website uses Bootstrap and Django as framework. \n
 Users can:
 1. Manage the website through adding 'aadmin/' at the end of the URL.
 2. Publish/edit/delete a post. If the post have not been piblished, it will be saved as a draft.
